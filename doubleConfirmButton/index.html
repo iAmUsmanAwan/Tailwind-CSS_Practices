@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double-Confirm-Button-with-Animation</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="min-h-screen flex justify-center items-center bg-gradient-to-br from-red-400 to-purple-300">
+        <form>
+            <div class="double-confirm overflow-hidden">
+                <div class="double-confirm-inner relative transform transition duration-500 ease-in-out">
+    <!--! delete button -->
+                <button type="button" class="py-5 px-10 font-mono bg-gray-900 text-gray-200">Delete</button>
+    <!--! confirm button -->
+                <button type="submit" class="absolute py-5 px-10 font-mono bg-red-900 text-gray-200">Really?</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+   // grab all the things
+        const doubleConfirm = document.querySelector('.double-confirm');
+
+        const doubleConfirmInner = document.querySelector('.double-confirm-inner');
+
+    // add event listeners
+
+        doubleConfirm.addEventListener('click', ()=>{
+        doubleConfirmInner.classList.add("-translate-x-full")
+});
+    </script>
+
+</body>
+</html>
