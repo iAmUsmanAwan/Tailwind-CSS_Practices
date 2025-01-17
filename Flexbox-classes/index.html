@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-classes</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+    </style>
+</head>
+<body>
+    <div class="bg-green-700 h-64 flex justify-center items-center">
+        <h2 class="text-4xl text-yellow-200">Centered!</h2>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="bg-gray-300 p-10 flex justify-between">
+        <div>Logo</div>
+        <div>Navigation</div>
+    </div>
+    
+    <!-- creating a Column Section -->
+    <div class="bg-yellow-500 p-10 md:flex md:space-x-8 space-y-4 md:space-y-0">
+        <div class="flex-shrink bg-white p-2">hello</div>
+        <div class="flex-grow bg-white p-2">hello</div>
+        <div class="flex-grow bg-white p-2">hello</div>
+    </div>
+    
+    <!-- Sidebar -->
+        
+    <div class="bg-teal-700 h-64">
+        <div class="flex h-full items-strech">
+            <div class="hidden md:block md:w-1/5 bg-orange-500 p-10">Sidebar</div>
+            <div class="flex-grow bg-teal-500 p-10">Content</div>
+        </div>
+    </div>
+</body>
+</html>
